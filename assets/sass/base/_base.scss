@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Amiri');
+@import url('https://fonts.googleapis.com/css?family=Changa&display=swap');
+
+@font-face {
+    font-family: Bein;
+    src: url("/assets/fonts/bein.ttf") format("ttf");
+  }
+@font-face {
+    font-family: 'sahitya regular';
+    src: url("/assets/fonts/sahitya-regular.ttf") format("ttf");
+  }
+
+html{
+    // This defines what 1rem is
+    font-size: 62.5%; //1 rem = 10px : 10px/16px = 62.5%
+
+    @include respond(tab-land) { // width < 1200
+    font-size: 56.25%; // 1 rem = 9px, 9/16 = 50%
+    }
+
+    @include respond(tab-port) { // width < 900
+    font-size: 50%; // 1 rem = 8px, 8/16 = 50%
+    }
+
+    @include respond(big-desktop) {
+    font-size: 75%; // 1 rem = 12px, 12/16 = 75%
+    }
+}
+
+
+
+body,html {
+    direction: rtl;
+    font-family: Bein, sans-serif !important;
+}
+
+*:focus,
+*:active{
+    outline: none;
+}
+
+.clearFix {
+    clear: both;
+}
