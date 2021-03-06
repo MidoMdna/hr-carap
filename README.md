@@ -1,6 +1,6 @@
-# rent
+# CarApp Hr Application
 
-> rent houses website
+> Application for car company to manage there employees
 
 ## Build Setup
 
